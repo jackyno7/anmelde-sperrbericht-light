@@ -1,6 +1,6 @@
 # Anmelde- und Sperrbericht Light – Kontosperrungen und Fehlanmeldungen im Active Directory
 
-Kostenloses PowerShell-Skript: prüft Kontosperrungen und fehlgeschlagene Anmeldungen aus den Sicherheitsprotokollen der Domänencontroller in **5 Punkten** und erzeugt einen übersichtlichen **HTML-Bericht auf Deutsch**. Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt nichts an und überträgt keine Daten.
+Kostenloses PowerShell-Skript: prüft Kontosperrungen und fehlgeschlagene Anmeldungen aus den Sicherheitsprotokollen der Domänencontroller in **5 Punkten** und erzeugt einen übersichtlichen **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt nichts an und überträgt keine Daten.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -57,6 +57,31 @@ Die Light-Version enthält 5 von 18 Prüfpunkten (28 %). Die **Vollversion** pr�
 - [DNS DHCP Bericht Light](https://github.com/jackyno7/dns-dhcp-bericht-light)
 - [DC Gesundheitsbericht Light](https://github.com/jackyno7/dc-gesundheitsbericht-light)
 
+<!-- querverweis:anfang -->
+## Alle Skripte und Vorlagen
+
+Übersicht aller Prüfskripte und Vorlagen: **[github.com/jackyno7](https://github.com/jackyno7)**
+
+Vollversionen:
+
+- Active Directory Prüfbericht: [Etsy](https://www.etsy.com/listing/4588853943) · [Gumroad](https://mueller86.gumroad.com/l/fcneoc)
+- Domänencontroller-Gesundheitsbericht: [Etsy](https://www.etsy.com/listing/4593087246) · [Gumroad](https://mueller86.gumroad.com/l/bseljr)
+- DNS- und DHCP-Bericht: [Etsy](https://www.etsy.com/listing/4593096270) · [Gumroad](https://mueller86.gumroad.com/l/sthgh)
+- Kerberos- und Altlasten-Check: [Etsy](https://www.etsy.com/listing/4593092377) · [Gumroad](https://mueller86.gumroad.com/l/zptvct)
+- Berechtigungsbericht Active Directory: [Etsy](https://www.etsy.com/listing/4593113568) · [Gumroad](https://mueller86.gumroad.com/l/xyjmdr)
+- GPO-Bericht: [Etsy](https://www.etsy.com/listing/4593129111) · [Gumroad](https://mueller86.gumroad.com/l/wdosl)
+- Anmelde- und Sperrbericht: [Etsy](https://www.etsy.com/listing/4593157082) · [Gumroad](https://mueller86.gumroad.com/l/ztktaaq)
+- Rechner-Inventar aus Active Directory: [Etsy](https://www.etsy.com/listing/4593088535) · [Gumroad](https://mueller86.gumroad.com/l/zzycdd)
+- Dateiserver-Bericht: [Etsy](https://www.etsy.com/listing/4612420692) · [Gumroad](https://mueller86.gumroad.com/l/wbbwj)
+- Windows-Rechnerbericht: [Etsy](https://www.etsy.com/listing/4616020701) · [Gumroad](https://mueller86.gumroad.com/l/wmhfk)
+- Exchange-Postfachbericht: [Etsy](https://www.etsy.com/listing/4614916333) · [Gumroad](https://mueller86.gumroad.com/l/gkdllj)
+- Exchange-Kalenderrechte-Bericht: [Etsy](https://www.etsy.com/listing/4614799790) · [Gumroad](https://mueller86.gumroad.com/l/iabfb)
+- Exchange-Nachrichtenverfolgung: [Etsy](https://www.etsy.com/listing/4614785975) · [Gumroad](https://mueller86.gumroad.com/l/msria)
+- Active Directory Prüfskript-Paket: [Etsy](https://www.etsy.com/listing/4611942401) · [Gumroad](https://mueller86.gumroad.com/l/awzjtc)
+
+Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, Homeoffice, Netzwerk-Dokumentation): [Etsy](https://www.etsy.com/shop/ITAdminToolsbyMM) · [Gumroad](https://mueller86.gumroad.com)
+<!-- querverweis:ende -->
+
 ## Hinweise
 
 - Der Bericht enthält Konto-, Rechner- oder Servernamen – bitte vertraulich behandeln.
@@ -68,4 +93,4 @@ Die Light-Version enthält 5 von 18 Prüfpunkten (28 %). Die **Vollversion** pr�
 
 ### English
 
-Free, read-only PowerShell script that analyses account lockouts and failed logons from the domain controllers' security logs (5 checks, German HTML report with findings and recommendations). No changes are made and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Anmelde-Sperrbericht-Light.ps1`. The full version with 18 checks: https://mueller86.gumroad.com/l/ztktaaq
+Free, read-only PowerShell script that analyses account lockouts and failed logons from the domain controllers' security logs (5 checks, HTML report in German or English (`-Language de|en`) with findings and recommendations). No changes are made and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Anmelde-Sperrbericht-Light.ps1`. The full version with 18 checks: https://mueller86.gumroad.com/l/ztktaaq
