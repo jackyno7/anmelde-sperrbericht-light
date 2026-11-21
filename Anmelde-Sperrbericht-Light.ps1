@@ -21,7 +21,7 @@
 
     Deutsch:
     Das Skript arbeitet ausschließlich LESEND. Es ändert nichts im Active Directory und nichts an den Servern,
-    entsperrt keine Konten, löscht keine Protokolle und überträgt keine Daten. Es schreibt genau eine HTML-Datei
+    entsperrt keine Konten, löscht keine Protokolle und sendet keine Daten an Dritte oder ins Internet. Es schreibt genau eine HTML-Datei
     (und auf Wunsch CSV-Dateien) in den angegebenen Ausgabeordner.
 
     Voraussetzungen: Windows PowerShell 5.1, das Modul "ActiveDirectory" und ein Konto, das das Sicherheitsprotokoll
