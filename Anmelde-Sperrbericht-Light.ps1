@@ -9,7 +9,7 @@
 
 .DESCRIPTION
     The script operates exclusively in READ-ONLY mode. It changes nothing in Active Directory and nothing on the servers,
-    does not unlock accounts, does not delete logs, and does not transfer data. It writes exactly one HTML file
+    does not unlock accounts, does not delete logs, and sends no data to third parties or the internet. It writes exactly one HTML file
     (and, if requested, CSV files) to the specified output folder.
 
     Prerequisites: Windows PowerShell 5.1, the "ActiveDirectory" module, and an account that can read the Security log
